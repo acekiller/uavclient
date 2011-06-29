@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A11814B013BB454E0028C1E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814AF13BB454E0028C1E1 /* UIKit.framework */; };
+		A11814B213BB454E0028C1E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814B113BB454E0028C1E1 /* Foundation.framework */; };
+		A11814B413BB454E0028C1E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814B313BB454E0028C1E1 /* CoreGraphics.framework */; };
+		A11814BA13BB454E0028C1E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A11814B813BB454E0028C1E1 /* InfoPlist.strings */; };
+		A11814BD13BB454E0028C1E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814BC13BB454E0028C1E1 /* main.m */; };
+		A11814C013BB454E0028C1E1 /* UAVClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814BF13BB454E0028C1E1 /* UAVClientAppDelegate.m */; };
+		A11814C313BB454E0028C1E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11814C113BB454E0028C1E1 /* MainWindow.xib */; };
+		A11814C613BB454E0028C1E1 /* UAVClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814C513BB454E0028C1E1 /* UAVClientViewController.m */; };
+		A11814C913BB454E0028C1E1 /* UAVClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11814C713BB454E0028C1E1 /* UAVClientViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A11814AB13BB454E0028C1E1 /* UAVClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAVClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11814AF13BB454E0028C1E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A11814B113BB454E0028C1E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A11814B313BB454E0028C1E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A11814B713BB454E0028C1E1 /* UAVClient-Info.plist */ = {isa = PBXFileReference; path = "UAVClient-Info.plist"; sourceTree = "<group>"; };
+		A11814B913BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A11814BB13BB454E0028C1E1 /* UAVClient-Prefix.pch */ = {isa = PBXFileReference; path = "UAVClient-Prefix.pch"; sourceTree = "<group>"; };
+		A11814BC13BB454E0028C1E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A11814BE13BB454E0028C1E1 /* UAVClientAppDelegate.h */ = {isa = PBXFileReference; path = UAVClientAppDelegate.h; sourceTree = "<group>"; };
+		A11814BF13BB454E0028C1E1 /* UAVClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAVClientAppDelegate.m; sourceTree = "<group>"; };
+		A11814C213BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A11814C413BB454E0028C1E1 /* UAVClientViewController.h */ = {isa = PBXFileReference; path = UAVClientViewController.h; sourceTree = "<group>"; };
+		A11814C513BB454E0028C1E1 /* UAVClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAVClientViewController.m; sourceTree = "<group>"; };
+		A11814C813BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UAVClientViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A11814A813BB454E0028C1E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11814B013BB454E0028C1E1 /* UIKit.framework in Frameworks */,
+				A11814B213BB454E0028C1E1 /* Foundation.framework in Frameworks */,
+				A11814B413BB454E0028C1E1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A11814A013BB454D0028C1E1 = {
+			isa = PBXGroup;
+			children = (
+				A11814B513BB454E0028C1E1 /* UAVClient */,
+				A11814AE13BB454E0028C1E1 /* Frameworks */,
+				A11814AC13BB454E0028C1E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A11814AC13BB454E0028C1E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A11814AB13BB454E0028C1E1 /* UAVClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A11814AE13BB454E0028C1E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A11814AF13BB454E0028C1E1 /* UIKit.framework */,
+				A11814B113BB454E0028C1E1 /* Foundation.framework */,
+				A11814B313BB454E0028C1E1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A11814B513BB454E0028C1E1 /* UAVClient */ = {
+			isa = PBXGroup;
+			children = (
+				A11814BE13BB454E0028C1E1 /* UAVClientAppDelegate.h */,
+				A11814BF13BB454E0028C1E1 /* UAVClientAppDelegate.m */,
+				A11814C113BB454E0028C1E1 /* MainWindow.xib */,
+				A11814C413BB454E0028C1E1 /* UAVClientViewController.h */,
+				A11814C513BB454E0028C1E1 /* UAVClientViewController.m */,
+				A11814C713BB454E0028C1E1 /* UAVClientViewController.xib */,
+				A11814B613BB454E0028C1E1 /* Supporting Files */,
+			);
+			path = UAVClient;
+			sourceTree = "<group>";
+		};
+		A11814B613BB454E0028C1E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A11814B713BB454E0028C1E1 /* UAVClient-Info.plist */,
+				A11814B813BB454E0028C1E1 /* InfoPlist.strings */,
+				A11814BB13BB454E0028C1E1 /* UAVClient-Prefix.pch */,
+				A11814BC13BB454E0028C1E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A11814AA13BB454E0028C1E1 /* UAVClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11814CC13BB454E0028C1E1 /* Build configuration list for PBXNativeTarget "UAVClient" */;
+			buildPhases = (
+				A11814A713BB454E0028C1E1 /* Sources */,
+				A11814A813BB454E0028C1E1 /* Frameworks */,
+				A11814A913BB454E0028C1E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UAVClient;
+			productName = UAVClient;
+			productReference = A11814AB13BB454E0028C1E1 /* UAVClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A11814A213BB454D0028C1E1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A11814A513BB454D0028C1E1 /* Build configuration list for PBXProject "UAVClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A11814A013BB454D0028C1E1;
+			productRefGroup = A11814AC13BB454E0028C1E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A11814AA13BB454E0028C1E1 /* UAVClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A11814A913BB454E0028C1E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11814BA13BB454E0028C1E1 /* InfoPlist.strings in Resources */,
+				A11814C313BB454E0028C1E1 /* MainWindow.xib in Resources */,
+				A11814C913BB454E0028C1E1 /* UAVClientViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A11814A713BB454E0028C1E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11814BD13BB454E0028C1E1 /* main.m in Sources */,
+				A11814C013BB454E0028C1E1 /* UAVClientAppDelegate.m in Sources */,
+				A11814C613BB454E0028C1E1 /* UAVClientViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A11814B813BB454E0028C1E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A11814B913BB454E0028C1E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A11814C113BB454E0028C1E1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A11814C213BB454E0028C1E1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A11814C713BB454E0028C1E1 /* UAVClientViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A11814C813BB454E0028C1E1 /* en */,
+			);
+			name = UAVClientViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A11814CA13BB454E0028C1E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A11814CB13BB454E0028C1E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		A11814CD13BB454E0028C1E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAVClient/UAVClient-Prefix.pch";
+				INFOPLIST_FILE = "UAVClient/UAVClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A11814CE13BB454E0028C1E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAVClient/UAVClient-Prefix.pch";
+				INFOPLIST_FILE = "UAVClient/UAVClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A11814A513BB454D0028C1E1 /* Build configuration list for PBXProject "UAVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11814CA13BB454E0028C1E1 /* Debug */,
+				A11814CB13BB454E0028C1E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A11814CC13BB454E0028C1E1 /* Build configuration list for PBXNativeTarget "UAVClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11814CD13BB454E0028C1E1 /* Debug */,
+				A11814CE13BB454E0028C1E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A11814A213BB454D0028C1E1 /* Project object */;
+}
