@@ -12,15 +12,22 @@
 
 
 @synthesize btnConnect;
+
 @synthesize textStatus;
 @synthesize controller;
 @synthesize locationManager;
+@synthesize motionManager;
+
 @synthesize compassImg;
 
 @synthesize textLat;
 @synthesize textLng;
+@synthesize textAli;
 @synthesize textHeading;
 
+@synthesize textRoll;
+@synthesize textPitch;
+@synthesize textYaw;
 
 
 -(void) setup{
@@ -34,6 +41,18 @@
     locationManager.headingFilter = kCLHeadingFilterNone;
     [locationManager startUpdatingHeading];
     
+    
+    motionManager = [[CMMotionManager alloc] init];
+    motionManager.deviceMotionUpdateInterval = 1.0f/1.0f; //1sec
+    if(motionManager.gyroAvailable){
+        [motionManager startDeviceMotionUpdates];
+    
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0/1.0 
+                                                          target:self selector:@selector(updateGyro) 
+                                                        userInfo:nil repeats:YES];
+    }else{
+        [motionManager release];
+    }
 }
 
 /**
@@ -52,6 +71,8 @@
     SCNetworkReachabilityFlags flag;
     SCNetworkReachabilityGetFlags(target, &flag);
 	
+
+    /*
     if(flag & kSCNetworkFlagsReachable){  // connected network. but, don't know network. 3g or wifi
         if(flag & kSCNetworkReachabilityFlagsIsWWAN){ 
             return false; //3g
@@ -61,16 +82,18 @@
     }else {
         return false;  // not connected any network
     }
+     */
 }
 
 /*
  * click Connect button
  * 
  */
--(IBAction) clieckConnect:(id)sender{
+-(IBAction) clickConnect:(id)sender{
     
     controller = [[NetworkController alloc] init];
     
+    // TODO : call createSock by thead
 //    [control/ler performSelectorOnMainThread:@selector(createSock) withObject:<#(id)#> waitUntilDone:NO];
 
 
@@ -83,34 +106,92 @@
     }
 }
 
-//
-// locate functions...
-//
+-(IBAction) clickSend:(id)sender{
+    
+    [self makeSendPacket];
+}
+
+/*
+ * Location infomation update(latitude, longitude)
+ */
 -(void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     
     double lat = newLocation.coordinate.latitude;
     double lng = newLocation.coordinate.longitude;
+    short ali = newLocation.altitude;
     
-    textLat.text = [NSString stringWithFormat:@"%f", lat];
-    textLng.text = [NSString stringWithFormat:@"%f", lng];
-    //    [self updateStatus:[NSString stringWithFormat:@"lat:%f \tlng:%f", lat, lng]];
+    latitude = (long) lat;
+    longitude = (long) lng;
+    altitude = ali;
+    
+    textLat.text = [NSString stringWithFormat:@"%.8f", lat];
+    textLng.text = [NSString stringWithFormat:@"%.8f", lng];
+    textAli.text = [NSString stringWithFormat:@"%f", ali];
+    
+    
 }
 
+/*
+ * Location infomation update (heading)
+ */
 -(void) locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading{
     
-    double heading = newHeading.magneticHeading;
-    CGFloat angle = (heading*M_PI)/180;
+    double head = newHeading.magneticHeading;
+    CGFloat angle = (head*M_PI)/180;
     
     textHeading.text = [NSString stringWithFormat:@"%f", angle];
     
     compassImg.transform = CGAffineTransformMakeRotation(-angle);
     [UIView commitAnimations];
     
+    heading = (short) head;
 }
 
+/*
+ * Location error handler
+ */
 -(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     
     [self updateStatus:[NSString stringWithFormat:@"locationManager error : %@", error.accessibilityValue]];
+}
+
+/*
+ * Gyroscope Info (roll, pitch, yaw)
+ */
+
+-(void) updateGyro{
+    
+    CMDeviceMotion *motion = motionManager.deviceMotion;
+    
+    CMAttitude *attitude = motion.attitude;
+    
+    roll = (short)attitude.roll;
+    pitch = (short)attitude.pitch;
+    yaw = (short)attitude.yaw;
+    
+    textRoll.text = [NSString stringWithFormat:@"%f", attitude.roll];
+    textPitch.text = [NSString stringWithFormat:@"%f", attitude.pitch];
+    textYaw.text = [NSString stringWithFormat:@"%f", attitude.yaw];
+    
+}
+
+
+-(void) makeSendPacket{
+    struct SendData *data = (struct SendData*) malloc(sizeof(struct SendData));
+    
+    data->State_Flag = 'c';
+    data->latitude = latitude;
+    data->longitude = longitude;
+    data->gspeed = 0;
+    data->heading = heading;
+    data->roll = roll;
+    data->pitch = pitch;
+    data->yaw = yaw;
+    data->msl = altitude;
+    
+    //TODO : make send data
+    [controller sendPacket:data];
+
 }
 
 
@@ -138,6 +219,7 @@
 - (void)dealloc
 {
     [controller release];
+    [motionManager release];
     [super dealloc];
 }
 

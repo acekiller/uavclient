@@ -14,8 +14,8 @@
 #import <arpa/inet.h>
 #import <netdb.h>
 
-
-
+#import "SendPacket.h"
+#import "RecvPacket.h"
 
 @interface NetworkController : NSObject {
 
@@ -34,6 +34,6 @@
 -(void) closeSock;
 
 -(void) recvRoutine;
--(void) sendPacket;
+-(void) sendPacket:(struct SendData *) data;
 
 @end

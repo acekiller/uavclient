@@ -20,6 +20,7 @@
 		A11814D613BB45BA0028C1E1 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814D513BB45BA0028C1E1 /* NetworkController.m */; };
 		A11814D813BB48610028C1E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814D713BB48610028C1E1 /* CoreLocation.framework */; };
 		A11814DA13BB48690028C1E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814D913BB48690028C1E1 /* SystemConfiguration.framework */; };
+		A195052013BC3DA4003B01CF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A195051F13BC3DA4003B01CF /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		A11814D513BB45BA0028C1E1 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		A11814D713BB48610028C1E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A11814D913BB48690028C1E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A195051F13BC3DA4003B01CF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A195052213BC468E003B01CF /* RecvPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecvPacket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A195052013BC3DA4003B01CF /* CoreMotion.framework in Frameworks */,
 				A11814DA13BB48690028C1E1 /* SystemConfiguration.framework in Frameworks */,
 				A11814D813BB48610028C1E1 /* CoreLocation.framework in Frameworks */,
 				A11814B013BB454E0028C1E1 /* UIKit.framework in Frameworks */,
@@ -83,6 +87,7 @@
 		A11814AE13BB454E0028C1E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A195051F13BC3DA4003B01CF /* CoreMotion.framework */,
 				A11814D913BB48690028C1E1 /* SystemConfiguration.framework */,
 				A11814D713BB48610028C1E1 /* CoreLocation.framework */,
 				A11814AF13BB454E0028C1E1 /* UIKit.framework */,
@@ -128,6 +133,7 @@
 		A11814D213BB45990028C1E1 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
+				A195052213BC468E003B01CF /* RecvPacket.h */,
 				A11814D313BB45BA0028C1E1 /* SendPacket.h */,
 				A11814D413BB45BA0028C1E1 /* NetworkController.h */,
 				A11814D513BB45BA0028C1E1 /* NetworkController.m */,
@@ -314,6 +320,7 @@
 				A11814CE13BB454E0028C1E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

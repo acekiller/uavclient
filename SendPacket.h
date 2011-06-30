@@ -9,19 +9,18 @@
 #import <Foundation/Foundation.h>
 
 
-struct sockaddr_in {
+struct SendData {
     
     unsigned char State_Flag; 
     long latitude;      // 위도..
     long longitude;     // 경도
-    unsigned char numSV; // gps number... 
+//    unsigned char numSV; // gps number... 
     short heading;      //나침반
     short gspeed;       // 속도
-    short msl;          // 고도(해저기준)
-    short roll;         //?
-    short pitch;        //?
-    short yaw;          //?
-
+    short msl;          // 고도(해저기준x -> 해발)
+    short roll;         //roll
+    short pitch;        //pitch
+    short yaw;          //yaw
     
 };
 

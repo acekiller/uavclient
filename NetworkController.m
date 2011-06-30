@@ -17,16 +17,14 @@
 
 -(id) init{
 //    char* remoteIp = "203.253.20.196";
-    //char* localIp = "192.168.150.202";
+//    char* localIp = "192.168.150.202";
 //    char* localIp = "127.0.0.1";
-    
-//    Boolean isLocal = true;
-//    char* connectIP = isLocal ? localIp : remoteIp;
+
         
     self = [super init];
     if (self) {
-        ip = (char*) malloc(sizeof("203.253.20.196"));
-        memcpy(ip, "203.253.20.196", sizeof("203.253.20.196"));
+        ip = (char*) malloc(sizeof("192.168.150.202"));
+        memcpy(ip, "192.168.150.202", sizeof("192.168.150.202"));
         port = 8080;
     }
     return self;
@@ -83,7 +81,12 @@
     }
 }
 
--(void) sendPacket{
+-(void) sendPacket:(struct SendData*) data{
+    
+    int len = 0;
+    len = send(sockfd, data, sizeof(data), MSG_WAITALL);
+    
+    NSLog(@"len : %d   flag :%c    lat:%ld", len, data->State_Flag, data->latitude);
     
     
 }
