@@ -71,7 +71,7 @@
     
     controller = [[NetworkController alloc] init];
     
-    [controller performSelectorOnMainThread:@selector(createSock) withObject:<#(id)#> waitUntilDone:NO];
+//    [control/ler performSelectorOnMainThread:@selector(createSock) withObject:<#(id)#> waitUntilDone:NO];
 
 
     
