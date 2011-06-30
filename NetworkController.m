@@ -22,13 +22,11 @@
     
 //    Boolean isLocal = true;
 //    char* connectIP = isLocal ? localIp : remoteIp;
-    
-//    NSLog(@"try connecting...to %s", connectIP);
-    
+        
     self = [super init];
     if (self) {
-        ip = (char*) malloc(sizeof("192.168.150.202"));
-        memcpy(ip, "192.168.150.202", sizeof("192.168.150.202"));
+        ip = (char*) malloc(sizeof("203.253.20.196"));
+        memcpy(ip, "203.253.20.196", sizeof("203.253.20.196"));
         port = 8080;
     }
     return self;

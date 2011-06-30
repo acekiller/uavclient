@@ -16,6 +16,10 @@
 		A11814C313BB454E0028C1E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11814C113BB454E0028C1E1 /* MainWindow.xib */; };
 		A11814C613BB454E0028C1E1 /* UAVClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814C513BB454E0028C1E1 /* UAVClientViewController.m */; };
 		A11814C913BB454E0028C1E1 /* UAVClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11814C713BB454E0028C1E1 /* UAVClientViewController.xib */; };
+		A11814D113BB45800028C1E1 /* Compass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11814D013BB45800028C1E1 /* Compass.jpg */; };
+		A11814D613BB45BA0028C1E1 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11814D513BB45BA0028C1E1 /* NetworkController.m */; };
+		A11814D813BB48610028C1E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814D713BB48610028C1E1 /* CoreLocation.framework */; };
+		A11814DA13BB48690028C1E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11814D913BB48690028C1E1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,22 @@
 		A11814AF13BB454E0028C1E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A11814B113BB454E0028C1E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A11814B313BB454E0028C1E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A11814B713BB454E0028C1E1 /* UAVClient-Info.plist */ = {isa = PBXFileReference; path = "UAVClient-Info.plist"; sourceTree = "<group>"; };
+		A11814B713BB454E0028C1E1 /* UAVClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UAVClient-Info.plist"; sourceTree = "<group>"; };
 		A11814B913BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A11814BB13BB454E0028C1E1 /* UAVClient-Prefix.pch */ = {isa = PBXFileReference; path = "UAVClient-Prefix.pch"; sourceTree = "<group>"; };
+		A11814BB13BB454E0028C1E1 /* UAVClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UAVClient-Prefix.pch"; sourceTree = "<group>"; };
 		A11814BC13BB454E0028C1E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A11814BE13BB454E0028C1E1 /* UAVClientAppDelegate.h */ = {isa = PBXFileReference; path = UAVClientAppDelegate.h; sourceTree = "<group>"; };
+		A11814BE13BB454E0028C1E1 /* UAVClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAVClientAppDelegate.h; sourceTree = "<group>"; };
 		A11814BF13BB454E0028C1E1 /* UAVClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAVClientAppDelegate.m; sourceTree = "<group>"; };
 		A11814C213BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A11814C413BB454E0028C1E1 /* UAVClientViewController.h */ = {isa = PBXFileReference; path = UAVClientViewController.h; sourceTree = "<group>"; };
+		A11814C413BB454E0028C1E1 /* UAVClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAVClientViewController.h; sourceTree = "<group>"; };
 		A11814C513BB454E0028C1E1 /* UAVClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAVClientViewController.m; sourceTree = "<group>"; };
 		A11814C813BB454E0028C1E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UAVClientViewController.xib; sourceTree = "<group>"; };
+		A11814D013BB45800028C1E1 /* Compass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Compass.jpg; sourceTree = "<group>"; };
+		A11814D313BB45BA0028C1E1 /* SendPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendPacket.h; sourceTree = "<group>"; };
+		A11814D413BB45BA0028C1E1 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		A11814D513BB45BA0028C1E1 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		A11814D713BB48610028C1E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A11814D913BB48690028C1E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11814DA13BB48690028C1E1 /* SystemConfiguration.framework in Frameworks */,
+				A11814D813BB48610028C1E1 /* CoreLocation.framework in Frameworks */,
 				A11814B013BB454E0028C1E1 /* UIKit.framework in Frameworks */,
 				A11814B213BB454E0028C1E1 /* Foundation.framework in Frameworks */,
 				A11814B413BB454E0028C1E1 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +64,8 @@
 		A11814A013BB454D0028C1E1 = {
 			isa = PBXGroup;
 			children = (
+				A11814CF13BB45690028C1E1 /* Resources */,
+				A11814D213BB45990028C1E1 /* Socket */,
 				A11814B513BB454E0028C1E1 /* UAVClient */,
 				A11814AE13BB454E0028C1E1 /* Frameworks */,
 				A11814AC13BB454E0028C1E1 /* Products */,
@@ -69,6 +83,8 @@
 		A11814AE13BB454E0028C1E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A11814D913BB48690028C1E1 /* SystemConfiguration.framework */,
+				A11814D713BB48610028C1E1 /* CoreLocation.framework */,
 				A11814AF13BB454E0028C1E1 /* UIKit.framework */,
 				A11814B113BB454E0028C1E1 /* Foundation.framework */,
 				A11814B313BB454E0028C1E1 /* CoreGraphics.framework */,
@@ -99,6 +115,24 @@
 				A11814BC13BB454E0028C1E1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A11814CF13BB45690028C1E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A11814D013BB45800028C1E1 /* Compass.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A11814D213BB45990028C1E1 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				A11814D313BB45BA0028C1E1 /* SendPacket.h */,
+				A11814D413BB45BA0028C1E1 /* NetworkController.h */,
+				A11814D513BB45BA0028C1E1 /* NetworkController.m */,
+			);
+			name = Socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +185,7 @@
 				A11814BA13BB454E0028C1E1 /* InfoPlist.strings in Resources */,
 				A11814C313BB454E0028C1E1 /* MainWindow.xib in Resources */,
 				A11814C913BB454E0028C1E1 /* UAVClientViewController.xib in Resources */,
+				A11814D113BB45800028C1E1 /* Compass.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +199,7 @@
 				A11814BD13BB454E0028C1E1 /* main.m in Sources */,
 				A11814C013BB454E0028C1E1 /* UAVClientAppDelegate.m in Sources */,
 				A11814C613BB454E0028C1E1 /* UAVClientViewController.m in Sources */,
+				A11814D613BB45BA0028C1E1 /* NetworkController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
